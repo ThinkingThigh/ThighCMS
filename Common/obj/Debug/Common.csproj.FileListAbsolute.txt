@@ -1,0 +1,11 @@
+E:\Worlkplace\17Zoo\ThighCMS\Common\obj\Debug\ResolveAssemblyReference.cache
+E:\Worlkplace\17Zoo\ThighCMS\Common\bin\Debug\Thigh.Common.dll
+E:\Worlkplace\17Zoo\ThighCMS\Common\bin\Debug\Thigh.Common.pdb
+E:\Worlkplace\17Zoo\ThighCMS\Common\bin\Debug\COM.Excel.dll
+E:\Worlkplace\17Zoo\ThighCMS\Common\bin\Debug\Excel.dll
+E:\Worlkplace\17Zoo\ThighCMS\Common\bin\Debug\OpenSmtp.dll
+E:\Worlkplace\17Zoo\ThighCMS\Common\bin\Debug\OWC10Chart.dll
+E:\Worlkplace\17Zoo\ThighCMS\Common\bin\Debug\office.dll
+E:\Worlkplace\17Zoo\ThighCMS\Common\bin\Debug\Microsoft.Vbe.Interop.dll
+E:\Worlkplace\17Zoo\ThighCMS\Common\obj\Debug\Thigh.Common.dll
+E:\Worlkplace\17Zoo\ThighCMS\Common\obj\Debug\Thigh.Common.pdb

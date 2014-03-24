@@ -1,0 +1,10 @@
+E:\Worlkplace\17Zoo\ThighCMS\Web\bin\Thigh.Web.dll
+E:\Worlkplace\17Zoo\ThighCMS\Web\bin\Thigh.Web.pdb
+E:\Worlkplace\17Zoo\ThighCMS\Web\obj\Debug\ResolveAssemblyReference.cache
+E:\Worlkplace\17Zoo\ThighCMS\Web\obj\Debug\Thigh.Web.dll
+E:\Worlkplace\17Zoo\ThighCMS\Web\obj\Debug\Thigh.Web.pdb
+E:\workplace\ThighCMS\ThighCMS\Web\bin\Thigh.Web.dll
+E:\workplace\ThighCMS\ThighCMS\Web\bin\Thigh.Web.pdb
+E:\workplace\ThighCMS\ThighCMS\Web\obj\Debug\ResolveAssemblyReference.cache
+E:\workplace\ThighCMS\ThighCMS\Web\obj\Debug\Thigh.Web.dll
+E:\workplace\ThighCMS\ThighCMS\Web\obj\Debug\Thigh.Web.pdb

@@ -1,0 +1,5 @@
+E:\Worlkplace\17Zoo\ThighCMS\Model\bin\Debug\Thigh.Model.dll
+E:\Worlkplace\17Zoo\ThighCMS\Model\bin\Debug\Thigh.Model.pdb
+E:\Worlkplace\17Zoo\ThighCMS\Model\obj\Debug\ResolveAssemblyReference.cache
+E:\Worlkplace\17Zoo\ThighCMS\Model\obj\Debug\Thigh.Model.dll
+E:\Worlkplace\17Zoo\ThighCMS\Model\obj\Debug\Thigh.Model.pdb

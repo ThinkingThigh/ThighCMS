@@ -1,0 +1,9 @@
+E:\Worlkplace\17Zoo\ThighCMS\DBUtility\bin\Debug\Thigh.DBUtility.dll
+E:\Worlkplace\17Zoo\ThighCMS\DBUtility\bin\Debug\Thigh.DBUtility.pdb
+E:\Worlkplace\17Zoo\ThighCMS\DBUtility\bin\Debug\IBatisNet.Common.dll
+E:\Worlkplace\17Zoo\ThighCMS\DBUtility\bin\Debug\IBatisNet.DataMapper.dll
+E:\Worlkplace\17Zoo\ThighCMS\DBUtility\bin\Debug\MySql.Data.dll
+E:\Worlkplace\17Zoo\ThighCMS\DBUtility\bin\Debug\System.Data.SQLite.DLL
+E:\Worlkplace\17Zoo\ThighCMS\DBUtility\obj\Debug\ResolveAssemblyReference.cache
+E:\Worlkplace\17Zoo\ThighCMS\DBUtility\obj\Debug\Thigh.DBUtility.dll
+E:\Worlkplace\17Zoo\ThighCMS\DBUtility\obj\Debug\Thigh.DBUtility.pdb

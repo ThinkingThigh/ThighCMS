@@ -1,0 +1,491 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{5B535162-10C2-4238-BC56-193B968E1834}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Thigh.Web</RootNamespace>
+    <AssemblyName>Thigh.Web</AssemblyName>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="LTP.Accounts, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Lib\LTP.Accounts.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="LtpPageControl, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\Lib\LtpPageControl.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Web.UI.WebControls, Version=1.0.2.226, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Lib\Microsoft.Web.UI.WebControls.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Extensions.Design" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Mobile" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="index.aspx.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="index.aspx.designer.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ThighCmsAdmin\index.aspx.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ThighCmsAdmin\index.aspx.designer.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ThighCmsAdmin\Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ThighCmsAdmin\Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ThighCmsAdmin\UCLeft.ascx.cs">
+      <DependentUpon>UCLeft.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ThighCmsAdmin\UCLeft.ascx.designer.cs">
+      <DependentUpon>UCLeft.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="ThighCmsAdmin\UCTop.ascx.cs">
+      <DependentUpon>UCTop.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ThighCmsAdmin\UCTop.ascx.designer.cs">
+      <DependentUpon>UCTop.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="ValidateCode.aspx.cs">
+      <DependentUpon>ValidateCode.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ValidateCode.aspx.designer.cs">
+      <DependentUpon>ValidateCode.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BLL\BLL.csproj">
+      <Project>{38D7AA58-C95B-449B-86C6-A8073A56E11F}</Project>
+      <Name>BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Common\Common.csproj">
+      <Project>{E3D8759A-C5EB-402D-9F10-F5C6029A8D1A}</Project>
+      <Name>Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Model\Model.csproj">
+      <Project>{53995DBB-9836-4647-AD22-865884FDEB9E}</Project>
+      <Name>Model</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_Data\db_thighcms.mdb">
+    </Content>
+    <Content Include="bin\COM.Excel.dll" />
+    <Content Include="bin\Excel.dll" />
+    <Content Include="bin\IBatisNet.Common.dll" />
+    <Content Include="bin\IBatisNet.DataMapper.dll" />
+    <Content Include="bin\LTP.Accounts.dll" />
+    <Content Include="bin\LtpPageControl.dll" />
+    <Content Include="bin\Microsoft.Vbe.Interop.dll" />
+    <Content Include="bin\Microsoft.Web.UI.WebControls.dll" />
+    <Content Include="bin\MySql.Data.dll" />
+    <Content Include="bin\office.dll" />
+    <Content Include="bin\OpenSmtp.dll" />
+    <Content Include="bin\OWC10Chart.dll" />
+    <Content Include="bin\System.Data.SQLite.dll" />
+    <Content Include="bin\Thigh.BLL.dll" />
+    <Content Include="bin\Thigh.BLL.pdb" />
+    <Content Include="bin\Thigh.Common.dll" />
+    <Content Include="bin\Thigh.Common.pdb" />
+    <Content Include="bin\Thigh.DAL.dll" />
+    <Content Include="bin\Thigh.DAL.pdb" />
+    <Content Include="bin\Thigh.DBUtility.dll" />
+    <Content Include="bin\Thigh.DBUtility.pdb" />
+    <Content Include="bin\Thigh.Model.dll" />
+    <Content Include="bin\Thigh.Model.pdb" />
+    <Content Include="index.aspx" />
+    <Content Include="ThighCmsAdmin\403.html" />
+    <Content Include="ThighCmsAdmin\404.html" />
+    <Content Include="ThighCmsAdmin\500.html" />
+    <Content Include="ThighCmsAdmin\503.html" />
+    <Content Include="ThighCmsAdmin\calendar.html" />
+    <Content Include="ThighCmsAdmin\faq.html" />
+    <Content Include="ThighCmsAdmin\help.html" />
+    <Content Include="ThighCmsAdmin\images\140x140.gif" />
+    <Content Include="ThighCmsAdmin\images\170x170.gif" />
+    <Content Include="ThighCmsAdmin\images\background.png" />
+    <Content Include="ThighCmsAdmin\images\black-Linen.png" />
+    <Content Include="ThighCmsAdmin\images\blue-paper.png" />
+    <Content Include="ThighCmsAdmin\images\extra_clean_paper.png" />
+    <Content Include="ThighCmsAdmin\images\furley_bg.png" />
+    <Content Include="ThighCmsAdmin\images\subtle_surface.png" />
+    <Content Include="ThighCmsAdmin\index.aspx" />
+    <Content Include="ThighCmsAdmin\index.html" />
+    <Content Include="ThighCmsAdmin\lib\bootstrap\css\bootstrap.css" />
+    <Content Include="ThighCmsAdmin\lib\bootstrap\css\bootstrap.min.css" />
+    <Content Include="ThighCmsAdmin\lib\bootstrap\img\glyphicons-halflings-white.png" />
+    <Content Include="ThighCmsAdmin\lib\bootstrap\img\glyphicons-halflings.png" />
+    <Content Include="ThighCmsAdmin\lib\bootstrap\js\bootstrap.js" />
+    <Content Include="ThighCmsAdmin\lib\bootstrap\js\bootstrap.min.js" />
+    <Content Include="ThighCmsAdmin\lib\font-awesome\css\font-awesome-ie7.css" />
+    <Content Include="ThighCmsAdmin\lib\font-awesome\css\font-awesome.css" />
+    <Content Include="ThighCmsAdmin\lib\font-awesome\docs\assets\css\font-awesome-ie7.css" />
+    <Content Include="ThighCmsAdmin\lib\font-awesome\docs\assets\css\font-awesome.css" />
+    <Content Include="ThighCmsAdmin\lib\font-awesome\docs\assets\css\prettify.css" />
+    <Content Include="ThighCmsAdmin\lib\font-awesome\docs\assets\css\site.css" />
+    <Content Include="ThighCmsAdmin\lib\font-awesome\docs\assets\ico\favicon.ico" />
+    <Content Include="ThighCmsAdmin\lib\font-awesome\docs\assets\js\backbone.min.js" />
+    <Content Include="ThighCmsAdmin\lib\font-awesome\docs\assets\js\index\index.js" />
+    <Content Include="ThighCmsAdmin\lib\font-awesome\docs\assets\js\jquery-1.7.1.min.js" />
+    <Content Include="ThighCmsAdmin\lib\font-awesome\docs\assets\js\prettify.min.js" />
+    <Content Include="ThighCmsAdmin\lib\font-awesome\docs\assets\js\tw-bs-201\bootstrap-alert.js" />
+    <Content Include="ThighCmsAdmin\lib\font-awesome\docs\assets\js\tw-bs-201\bootstrap-button.js" />
+    <Content Include="ThighCmsAdmin\lib\font-awesome\docs\assets\js\tw-bs-201\bootstrap-carousel.js" />
+    <Content Include="ThighCmsAdmin\lib\font-awesome\docs\assets\js\tw-bs-201\bootstrap-collapse.js" />
+    <Content Include="ThighCmsAdmin\lib\font-awesome\docs\assets\js\tw-bs-201\bootstrap-dropdown.js" />
+    <Content Include="ThighCmsAdmin\lib\font-awesome\docs\assets\js\tw-bs-201\bootstrap-modal.js" />
+    <Content Include="ThighCmsAdmin\lib\font-awesome\docs\assets\js\tw-bs-201\bootstrap-popover.js" />
+    <Content Include="ThighCmsAdmin\lib\font-awesome\docs\assets\js\tw-bs-201\bootstrap-scrollspy.js" />
+    <Content Include="ThighCmsAdmin\lib\font-awesome\docs\assets\js\tw-bs-201\bootstrap-tab.js" />
+    <Content Include="ThighCmsAdmin\lib\font-awesome\docs\assets\js\tw-bs-201\bootstrap-tooltip.js" />
+    <Content Include="ThighCmsAdmin\lib\font-awesome\docs\assets\js\tw-bs-201\bootstrap-transition.js" />
+    <Content Include="ThighCmsAdmin\lib\font-awesome\docs\assets\js\tw-bs-201\bootstrap-typeahead.js" />
+    <Content Include="ThighCmsAdmin\lib\font-awesome\docs\assets\js\underscore.min.js" />
+    <Content Include="ThighCmsAdmin\lib\font-awesome\docs\index.html" />
+    <Content Include="ThighCmsAdmin\lib\fullcalendar-1.5.3\changelog.txt" />
+    <Content Include="ThighCmsAdmin\lib\fullcalendar-1.5.3\demos\agenda-views.html" />
+    <Content Include="ThighCmsAdmin\lib\fullcalendar-1.5.3\demos\basic-views.html" />
+    <Content Include="ThighCmsAdmin\lib\fullcalendar-1.5.3\demos\cupertino\images\ui-bg_diagonals-thick_90_eeeeee_40x40.png" />
+    <Content Include="ThighCmsAdmin\lib\fullcalendar-1.5.3\demos\cupertino\images\ui-bg_flat_15_cd0a0a_40x100.png" />
+    <Content Include="ThighCmsAdmin\lib\fullcalendar-1.5.3\demos\cupertino\images\ui-bg_glass_100_e4f1fb_1x400.png" />
+    <Content Include="ThighCmsAdmin\lib\fullcalendar-1.5.3\demos\cupertino\images\ui-bg_glass_50_3baae3_1x400.png" />
+    <Content Include="ThighCmsAdmin\lib\fullcalendar-1.5.3\demos\cupertino\images\ui-bg_glass_80_d7ebf9_1x400.png" />
+    <Content Include="ThighCmsAdmin\lib\fullcalendar-1.5.3\demos\cupertino\images\ui-bg_highlight-hard_100_f2f5f7_1x100.png" />
+    <Content Include="ThighCmsAdmin\lib\fullcalendar-1.5.3\demos\cupertino\images\ui-bg_highlight-hard_70_000000_1x100.png" />
+    <Content Include="ThighCmsAdmin\lib\fullcalendar-1.5.3\demos\cupertino\images\ui-bg_highlight-soft_100_deedf7_1x100.png" />
+    <Content Include="ThighCmsAdmin\lib\fullcalendar-1.5.3\demos\cupertino\images\ui-bg_highlight-soft_25_ffef8f_1x100.png" />
+    <Content Include="ThighCmsAdmin\lib\fullcalendar-1.5.3\demos\cupertino\images\ui-icons_2694e8_256x240.png" />
+    <Content Include="ThighCmsAdmin\lib\fullcalendar-1.5.3\demos\cupertino\images\ui-icons_2e83ff_256x240.png" />
+    <Content Include="ThighCmsAdmin\lib\fullcalendar-1.5.3\demos\cupertino\images\ui-icons_3d80b3_256x240.png" />
+    <Content Include="ThighCmsAdmin\lib\fullcalendar-1.5.3\demos\cupertino\images\ui-icons_72a7cf_256x240.png" />
+    <Content Include="ThighCmsAdmin\lib\fullcalendar-1.5.3\demos\cupertino\images\ui-icons_ffffff_256x240.png" />
+    <Content Include="ThighCmsAdmin\lib\fullcalendar-1.5.3\demos\cupertino\theme.css" />
+    <Content Include="ThighCmsAdmin\lib\fullcalendar-1.5.3\demos\default.html" />
+    <Content Include="ThighCmsAdmin\lib\fullcalendar-1.5.3\demos\external-dragging.html" />
+    <Content Include="ThighCmsAdmin\lib\fullcalendar-1.5.3\demos\gcal.html" />
+    <Content Include="ThighCmsAdmin\lib\fullcalendar-1.5.3\demos\json.html" />
+    <Content Include="ThighCmsAdmin\lib\fullcalendar-1.5.3\demos\selectable.html" />
+    <Content Include="ThighCmsAdmin\lib\fullcalendar-1.5.3\demos\theme.html" />
+    <Content Include="ThighCmsAdmin\lib\fullcalendar-1.5.3\fullcalendar\fullcalendar.css" />
+    <Content Include="ThighCmsAdmin\lib\fullcalendar-1.5.3\fullcalendar\fullcalendar.js" />
+    <Content Include="ThighCmsAdmin\lib\fullcalendar-1.5.3\fullcalendar\fullcalendar.min.js" />
+    <Content Include="ThighCmsAdmin\lib\fullcalendar-1.5.3\fullcalendar\fullcalendar.print.css" />
+    <Content Include="ThighCmsAdmin\lib\fullcalendar-1.5.3\fullcalendar\gcal.js" />
+    <Content Include="ThighCmsAdmin\lib\fullcalendar-1.5.3\GPL-LICENSE.txt" />
+    <Content Include="ThighCmsAdmin\lib\fullcalendar-1.5.3\jquery\jquery-1.7.1.min.js" />
+    <Content Include="ThighCmsAdmin\lib\fullcalendar-1.5.3\jquery\jquery-ui-1.8.17.custom.min.js" />
+    <Content Include="ThighCmsAdmin\lib\fullcalendar-1.5.3\MIT-LICENSE.txt" />
+    <Content Include="ThighCmsAdmin\lib\jquery-1.7.2.min.js" />
+    <Content Include="ThighCmsAdmin\lib\jquery-1.8.1.min.js" />
+    <Content Include="ThighCmsAdmin\lib\lib\bootstrap\css\bootstrap.css" />
+    <Content Include="ThighCmsAdmin\lib\lib\bootstrap\css\bootstrap.min.css" />
+    <Content Include="ThighCmsAdmin\lib\lib\bootstrap\img\glyphicons-halflings-white.png" />
+    <Content Include="ThighCmsAdmin\lib\lib\bootstrap\img\glyphicons-halflings.png" />
+    <Content Include="ThighCmsAdmin\lib\lib\bootstrap\js\bootstrap.js" />
+    <Content Include="ThighCmsAdmin\lib\lib\bootstrap\js\bootstrap.min.js" />
+    <Content Include="ThighCmsAdmin\lib\lib\font-awesome\css\font-awesome-ie7.css" />
+    <Content Include="ThighCmsAdmin\lib\lib\font-awesome\css\font-awesome.css" />
+    <Content Include="ThighCmsAdmin\lib\lib\font-awesome\docs\assets\css\font-awesome-ie7.css" />
+    <Content Include="ThighCmsAdmin\lib\lib\font-awesome\docs\assets\css\font-awesome.css" />
+    <Content Include="ThighCmsAdmin\lib\lib\font-awesome\docs\assets\css\prettify.css" />
+    <Content Include="ThighCmsAdmin\lib\lib\font-awesome\docs\assets\css\site.css" />
+    <Content Include="ThighCmsAdmin\lib\lib\font-awesome\docs\assets\ico\favicon.ico" />
+    <Content Include="ThighCmsAdmin\lib\lib\font-awesome\docs\assets\js\backbone.min.js" />
+    <Content Include="ThighCmsAdmin\lib\lib\font-awesome\docs\assets\js\index\index.js" />
+    <Content Include="ThighCmsAdmin\lib\lib\font-awesome\docs\assets\js\jquery-1.7.1.min.js" />
+    <Content Include="ThighCmsAdmin\lib\lib\font-awesome\docs\assets\js\prettify.min.js" />
+    <Content Include="ThighCmsAdmin\lib\lib\font-awesome\docs\assets\js\tw-bs-201\bootstrap-alert.js" />
+    <Content Include="ThighCmsAdmin\lib\lib\font-awesome\docs\assets\js\tw-bs-201\bootstrap-button.js" />
+    <Content Include="ThighCmsAdmin\lib\lib\font-awesome\docs\assets\js\tw-bs-201\bootstrap-carousel.js" />
+    <Content Include="ThighCmsAdmin\lib\lib\font-awesome\docs\assets\js\tw-bs-201\bootstrap-collapse.js" />
+    <Content Include="ThighCmsAdmin\lib\lib\font-awesome\docs\assets\js\tw-bs-201\bootstrap-dropdown.js" />
+    <Content Include="ThighCmsAdmin\lib\lib\font-awesome\docs\assets\js\tw-bs-201\bootstrap-modal.js" />
+    <Content Include="ThighCmsAdmin\lib\lib\font-awesome\docs\assets\js\tw-bs-201\bootstrap-popover.js" />
+    <Content Include="ThighCmsAdmin\lib\lib\font-awesome\docs\assets\js\tw-bs-201\bootstrap-scrollspy.js" />
+    <Content Include="ThighCmsAdmin\lib\lib\font-awesome\docs\assets\js\tw-bs-201\bootstrap-tab.js" />
+    <Content Include="ThighCmsAdmin\lib\lib\font-awesome\docs\assets\js\tw-bs-201\bootstrap-tooltip.js" />
+    <Content Include="ThighCmsAdmin\lib\lib\font-awesome\docs\assets\js\tw-bs-201\bootstrap-transition.js" />
+    <Content Include="ThighCmsAdmin\lib\lib\font-awesome\docs\assets\js\tw-bs-201\bootstrap-typeahead.js" />
+    <Content Include="ThighCmsAdmin\lib\lib\font-awesome\docs\assets\js\underscore.min.js" />
+    <Content Include="ThighCmsAdmin\lib\lib\font-awesome\docs\index.html" />
+    <Content Include="ThighCmsAdmin\lib\lib\fullcalendar-1.5.3\changelog.txt" />
+    <Content Include="ThighCmsAdmin\lib\lib\fullcalendar-1.5.3\demos\agenda-views.html" />
+    <Content Include="ThighCmsAdmin\lib\lib\fullcalendar-1.5.3\demos\basic-views.html" />
+    <Content Include="ThighCmsAdmin\lib\lib\fullcalendar-1.5.3\demos\cupertino\images\ui-bg_diagonals-thick_90_eeeeee_40x40.png" />
+    <Content Include="ThighCmsAdmin\lib\lib\fullcalendar-1.5.3\demos\cupertino\images\ui-bg_flat_15_cd0a0a_40x100.png" />
+    <Content Include="ThighCmsAdmin\lib\lib\fullcalendar-1.5.3\demos\cupertino\images\ui-bg_glass_100_e4f1fb_1x400.png" />
+    <Content Include="ThighCmsAdmin\lib\lib\fullcalendar-1.5.3\demos\cupertino\images\ui-bg_glass_50_3baae3_1x400.png" />
+    <Content Include="ThighCmsAdmin\lib\lib\fullcalendar-1.5.3\demos\cupertino\images\ui-bg_glass_80_d7ebf9_1x400.png" />
+    <Content Include="ThighCmsAdmin\lib\lib\fullcalendar-1.5.3\demos\cupertino\images\ui-bg_highlight-hard_100_f2f5f7_1x100.png" />
+    <Content Include="ThighCmsAdmin\lib\lib\fullcalendar-1.5.3\demos\cupertino\images\ui-bg_highlight-hard_70_000000_1x100.png" />
+    <Content Include="ThighCmsAdmin\lib\lib\fullcalendar-1.5.3\demos\cupertino\images\ui-bg_highlight-soft_100_deedf7_1x100.png" />
+    <Content Include="ThighCmsAdmin\lib\lib\fullcalendar-1.5.3\demos\cupertino\images\ui-bg_highlight-soft_25_ffef8f_1x100.png" />
+    <Content Include="ThighCmsAdmin\lib\lib\fullcalendar-1.5.3\demos\cupertino\images\ui-icons_2694e8_256x240.png" />
+    <Content Include="ThighCmsAdmin\lib\lib\fullcalendar-1.5.3\demos\cupertino\images\ui-icons_2e83ff_256x240.png" />
+    <Content Include="ThighCmsAdmin\lib\lib\fullcalendar-1.5.3\demos\cupertino\images\ui-icons_3d80b3_256x240.png" />
+    <Content Include="ThighCmsAdmin\lib\lib\fullcalendar-1.5.3\demos\cupertino\images\ui-icons_72a7cf_256x240.png" />
+    <Content Include="ThighCmsAdmin\lib\lib\fullcalendar-1.5.3\demos\cupertino\images\ui-icons_ffffff_256x240.png" />
+    <Content Include="ThighCmsAdmin\lib\lib\fullcalendar-1.5.3\demos\cupertino\theme.css" />
+    <Content Include="ThighCmsAdmin\lib\lib\fullcalendar-1.5.3\demos\default.html" />
+    <Content Include="ThighCmsAdmin\lib\lib\fullcalendar-1.5.3\demos\external-dragging.html" />
+    <Content Include="ThighCmsAdmin\lib\lib\fullcalendar-1.5.3\demos\gcal.html" />
+    <Content Include="ThighCmsAdmin\lib\lib\fullcalendar-1.5.3\demos\json.html" />
+    <Content Include="ThighCmsAdmin\lib\lib\fullcalendar-1.5.3\demos\selectable.html" />
+    <Content Include="ThighCmsAdmin\lib\lib\fullcalendar-1.5.3\demos\theme.html" />
+    <Content Include="ThighCmsAdmin\lib\lib\fullcalendar-1.5.3\fullcalendar\fullcalendar.css" />
+    <Content Include="ThighCmsAdmin\lib\lib\fullcalendar-1.5.3\fullcalendar\fullcalendar.js" />
+    <Content Include="ThighCmsAdmin\lib\lib\fullcalendar-1.5.3\fullcalendar\fullcalendar.min.js" />
+    <Content Include="ThighCmsAdmin\lib\lib\fullcalendar-1.5.3\fullcalendar\fullcalendar.print.css" />
+    <Content Include="ThighCmsAdmin\lib\lib\fullcalendar-1.5.3\fullcalendar\gcal.js" />
+    <Content Include="ThighCmsAdmin\lib\lib\fullcalendar-1.5.3\GPL-LICENSE.txt" />
+    <Content Include="ThighCmsAdmin\lib\lib\fullcalendar-1.5.3\jquery\jquery-1.7.1.min.js" />
+    <Content Include="ThighCmsAdmin\lib\lib\fullcalendar-1.5.3\jquery\jquery-ui-1.8.17.custom.min.js" />
+    <Content Include="ThighCmsAdmin\lib\lib\fullcalendar-1.5.3\MIT-LICENSE.txt" />
+    <Content Include="ThighCmsAdmin\lib\lib\jquery-1.7.2.min.js" />
+    <Content Include="ThighCmsAdmin\lib\lib\jquery-1.8.1.min.js" />
+    <Content Include="ThighCmsAdmin\Login.aspx" />
+    <Content Include="ThighCmsAdmin\media.html" />
+    <Content Include="ThighCmsAdmin\privacy-policy.html" />
+    <Content Include="ThighCmsAdmin\reset-password.html" />
+    <Content Include="ThighCmsAdmin\sign-in.html" />
+    <Content Include="ThighCmsAdmin\sign-up.html" />
+    <Content Include="ThighCmsAdmin\stylesheets\elements.css" />
+    <Content Include="ThighCmsAdmin\stylesheets\theme.css" />
+    <Content Include="ThighCmsAdmin\terms-and-conditions.html" />
+    <Content Include="ThighCmsAdmin\UCLeft.ascx" />
+    <Content Include="ThighCmsAdmin\UCTop.ascx" />
+    <Content Include="ThighCmsAdmin\user.html" />
+    <Content Include="ThighCmsAdmin\users.html" />
+    <Content Include="ValidateCode.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ThighCmsAdmin\lib\.DS_Store" />
+    <None Include="ThighCmsAdmin\lib\font-awesome\.gitignore" />
+    <None Include="ThighCmsAdmin\lib\font-awesome\docs\assets\font\fontawesome-webfont.eot" />
+    <None Include="ThighCmsAdmin\lib\font-awesome\docs\assets\font\fontawesome-webfont.svg" />
+    <None Include="ThighCmsAdmin\lib\font-awesome\docs\assets\font\fontawesome-webfont.ttf" />
+    <None Include="ThighCmsAdmin\lib\font-awesome\docs\assets\font\fontawesome-webfont.woff" />
+    <None Include="ThighCmsAdmin\lib\font-awesome\docs\assets\font\museo_slab_300-webfont.eot" />
+    <None Include="ThighCmsAdmin\lib\font-awesome\docs\assets\font\museo_slab_300-webfont.ttf" />
+    <None Include="ThighCmsAdmin\lib\font-awesome\docs\assets\font\museo_slab_500-webfont.eot" />
+    <None Include="ThighCmsAdmin\lib\font-awesome\docs\assets\font\museo_slab_500-webfont.ttf" />
+    <None Include="ThighCmsAdmin\lib\font-awesome\docs\assets\font\proximanova-webfont.eot" />
+    <None Include="ThighCmsAdmin\lib\font-awesome\docs\assets\font\proximanova-webfont.ttf" />
+    <None Include="ThighCmsAdmin\lib\font-awesome\docs\assets\less\font-awesome-ie7.less" />
+    <None Include="ThighCmsAdmin\lib\font-awesome\docs\assets\less\font-awesome.less" />
+    <None Include="ThighCmsAdmin\lib\font-awesome\docs\assets\less\font-site.less" />
+    <None Include="ThighCmsAdmin\lib\font-awesome\docs\assets\less\mixins.less" />
+    <None Include="ThighCmsAdmin\lib\font-awesome\docs\assets\less\site.less" />
+    <None Include="ThighCmsAdmin\lib\font-awesome\docs\assets\less\twbs-203\accordion.less" />
+    <None Include="ThighCmsAdmin\lib\font-awesome\docs\assets\less\twbs-203\alerts.less" />
+    <None Include="ThighCmsAdmin\lib\font-awesome\docs\assets\less\twbs-203\bootstrap.less" />
+    <None Include="ThighCmsAdmin\lib\font-awesome\docs\assets\less\twbs-203\breadcrumbs.less" />
+    <None Include="ThighCmsAdmin\lib\font-awesome\docs\assets\less\twbs-203\button-groups.less" />
+    <None Include="ThighCmsAdmin\lib\font-awesome\docs\assets\less\twbs-203\buttons.less" />
+    <None Include="ThighCmsAdmin\lib\font-awesome\docs\assets\less\twbs-203\carousel.less" />
+    <None Include="ThighCmsAdmin\lib\font-awesome\docs\assets\less\twbs-203\close.less" />
+    <None Include="ThighCmsAdmin\lib\font-awesome\docs\assets\less\twbs-203\code.less" />
+    <None Include="ThighCmsAdmin\lib\font-awesome\docs\assets\less\twbs-203\component-animations.less" />
+    <None Include="ThighCmsAdmin\lib\font-awesome\docs\assets\less\twbs-203\dropdowns.less" />
+    <None Include="ThighCmsAdmin\lib\font-awesome\docs\assets\less\twbs-203\forms.less" />
+    <None Include="ThighCmsAdmin\lib\font-awesome\docs\assets\less\twbs-203\grid.less" />
+    <None Include="ThighCmsAdmin\lib\font-awesome\docs\assets\less\twbs-203\hero-unit.less" />
+    <None Include="ThighCmsAdmin\lib\font-awesome\docs\assets\less\twbs-203\labels-badges.less" />
+    <None Include="ThighCmsAdmin\lib\font-awesome\docs\assets\less\twbs-203\layouts.less" />
+    <None Include="ThighCmsAdmin\lib\font-awesome\docs\assets\less\twbs-203\mixins.less" />
+    <None Include="ThighCmsAdmin\lib\font-awesome\docs\assets\less\twbs-203\modals.less" />
+    <None Include="ThighCmsAdmin\lib\font-awesome\docs\assets\less\twbs-203\navbar.less" />
+    <None Include="ThighCmsAdmin\lib\font-awesome\docs\assets\less\twbs-203\navs.less" />
+    <None Include="ThighCmsAdmin\lib\font-awesome\docs\assets\less\twbs-203\pager.less" />
+    <None Include="ThighCmsAdmin\lib\font-awesome\docs\assets\less\twbs-203\pagination.less" />
+    <None Include="ThighCmsAdmin\lib\font-awesome\docs\assets\less\twbs-203\popovers.less" />
+    <None Include="ThighCmsAdmin\lib\font-awesome\docs\assets\less\twbs-203\progress-bars.less" />
+    <None Include="ThighCmsAdmin\lib\font-awesome\docs\assets\less\twbs-203\reset.less" />
+    <None Include="ThighCmsAdmin\lib\font-awesome\docs\assets\less\twbs-203\responsive-1200px-min.less" />
+    <None Include="ThighCmsAdmin\lib\font-awesome\docs\assets\less\twbs-203\responsive-767px-max.less" />
+    <None Include="ThighCmsAdmin\lib\font-awesome\docs\assets\less\twbs-203\responsive-768px-979px.less" />
+    <None Include="ThighCmsAdmin\lib\font-awesome\docs\assets\less\twbs-203\responsive-navbar.less" />
+    <None Include="ThighCmsAdmin\lib\font-awesome\docs\assets\less\twbs-203\responsive-utilities.less" />
+    <None Include="ThighCmsAdmin\lib\font-awesome\docs\assets\less\twbs-203\responsive.less" />
+    <None Include="ThighCmsAdmin\lib\font-awesome\docs\assets\less\twbs-203\scaffolding.less" />
+    <None Include="ThighCmsAdmin\lib\font-awesome\docs\assets\less\twbs-203\sprites.less" />
+    <None Include="ThighCmsAdmin\lib\font-awesome\docs\assets\less\twbs-203\tables.less" />
+    <None Include="ThighCmsAdmin\lib\font-awesome\docs\assets\less\twbs-203\thumbnails.less" />
+    <None Include="ThighCmsAdmin\lib\font-awesome\docs\assets\less\twbs-203\tooltip.less" />
+    <None Include="ThighCmsAdmin\lib\font-awesome\docs\assets\less\twbs-203\type.less" />
+    <None Include="ThighCmsAdmin\lib\font-awesome\docs\assets\less\twbs-203\utilities.less" />
+    <None Include="ThighCmsAdmin\lib\font-awesome\docs\assets\less\twbs-203\variables.less" />
+    <None Include="ThighCmsAdmin\lib\font-awesome\docs\assets\less\twbs-203\wells.less" />
+    <None Include="ThighCmsAdmin\lib\font-awesome\docs\assets\less\variables.less" />
+    <None Include="ThighCmsAdmin\lib\font-awesome\FontAwesome-Vectors.pdf" />
+    <None Include="ThighCmsAdmin\lib\font-awesome\FontAwesome.ttf" />
+    <None Include="ThighCmsAdmin\lib\font-awesome\font\fontawesome-webfont.eot" />
+    <None Include="ThighCmsAdmin\lib\font-awesome\font\fontawesome-webfont.svg" />
+    <None Include="ThighCmsAdmin\lib\font-awesome\font\fontawesome-webfont.ttf" />
+    <None Include="ThighCmsAdmin\lib\font-awesome\font\fontawesome-webfont.woff" />
+    <None Include="ThighCmsAdmin\lib\font-awesome\less\font-awesome-ie7.less" />
+    <None Include="ThighCmsAdmin\lib\font-awesome\less\font-awesome.less" />
+    <None Include="ThighCmsAdmin\lib\font-awesome\README.md" />
+    <None Include="ThighCmsAdmin\lib\font-awesome\sass\font-awesome.sass" />
+    <None Include="ThighCmsAdmin\lib\font-awesome\sass\font-awesome.scss" />
+    <None Include="ThighCmsAdmin\lib\fullcalendar-1.5.3\demos\json-events.php" />
+    <None Include="ThighCmsAdmin\lib\lib\.DS_Store" />
+    <None Include="ThighCmsAdmin\lib\lib\font-awesome\.gitignore" />
+    <None Include="ThighCmsAdmin\lib\lib\font-awesome\docs\assets\font\fontawesome-webfont.eot" />
+    <None Include="ThighCmsAdmin\lib\lib\font-awesome\docs\assets\font\fontawesome-webfont.svg" />
+    <None Include="ThighCmsAdmin\lib\lib\font-awesome\docs\assets\font\fontawesome-webfont.ttf" />
+    <None Include="ThighCmsAdmin\lib\lib\font-awesome\docs\assets\font\fontawesome-webfont.woff" />
+    <None Include="ThighCmsAdmin\lib\lib\font-awesome\docs\assets\font\museo_slab_300-webfont.eot" />
+    <None Include="ThighCmsAdmin\lib\lib\font-awesome\docs\assets\font\museo_slab_300-webfont.ttf" />
+    <None Include="ThighCmsAdmin\lib\lib\font-awesome\docs\assets\font\museo_slab_500-webfont.eot" />
+    <None Include="ThighCmsAdmin\lib\lib\font-awesome\docs\assets\font\museo_slab_500-webfont.ttf" />
+    <None Include="ThighCmsAdmin\lib\lib\font-awesome\docs\assets\font\proximanova-webfont.eot" />
+    <None Include="ThighCmsAdmin\lib\lib\font-awesome\docs\assets\font\proximanova-webfont.ttf" />
+    <None Include="ThighCmsAdmin\lib\lib\font-awesome\docs\assets\less\font-awesome-ie7.less" />
+    <None Include="ThighCmsAdmin\lib\lib\font-awesome\docs\assets\less\font-awesome.less" />
+    <None Include="ThighCmsAdmin\lib\lib\font-awesome\docs\assets\less\font-site.less" />
+    <None Include="ThighCmsAdmin\lib\lib\font-awesome\docs\assets\less\mixins.less" />
+    <None Include="ThighCmsAdmin\lib\lib\font-awesome\docs\assets\less\site.less" />
+    <None Include="ThighCmsAdmin\lib\lib\font-awesome\docs\assets\less\twbs-203\accordion.less" />
+    <None Include="ThighCmsAdmin\lib\lib\font-awesome\docs\assets\less\twbs-203\alerts.less" />
+    <None Include="ThighCmsAdmin\lib\lib\font-awesome\docs\assets\less\twbs-203\bootstrap.less" />
+    <None Include="ThighCmsAdmin\lib\lib\font-awesome\docs\assets\less\twbs-203\breadcrumbs.less" />
+    <None Include="ThighCmsAdmin\lib\lib\font-awesome\docs\assets\less\twbs-203\button-groups.less" />
+    <None Include="ThighCmsAdmin\lib\lib\font-awesome\docs\assets\less\twbs-203\buttons.less" />
+    <None Include="ThighCmsAdmin\lib\lib\font-awesome\docs\assets\less\twbs-203\carousel.less" />
+    <None Include="ThighCmsAdmin\lib\lib\font-awesome\docs\assets\less\twbs-203\close.less" />
+    <None Include="ThighCmsAdmin\lib\lib\font-awesome\docs\assets\less\twbs-203\code.less" />
+    <None Include="ThighCmsAdmin\lib\lib\font-awesome\docs\assets\less\twbs-203\component-animations.less" />
+    <None Include="ThighCmsAdmin\lib\lib\font-awesome\docs\assets\less\twbs-203\dropdowns.less" />
+    <None Include="ThighCmsAdmin\lib\lib\font-awesome\docs\assets\less\twbs-203\forms.less" />
+    <None Include="ThighCmsAdmin\lib\lib\font-awesome\docs\assets\less\twbs-203\grid.less" />
+    <None Include="ThighCmsAdmin\lib\lib\font-awesome\docs\assets\less\twbs-203\hero-unit.less" />
+    <None Include="ThighCmsAdmin\lib\lib\font-awesome\docs\assets\less\twbs-203\labels-badges.less" />
+    <None Include="ThighCmsAdmin\lib\lib\font-awesome\docs\assets\less\twbs-203\layouts.less" />
+    <None Include="ThighCmsAdmin\lib\lib\font-awesome\docs\assets\less\twbs-203\mixins.less" />
+    <None Include="ThighCmsAdmin\lib\lib\font-awesome\docs\assets\less\twbs-203\modals.less" />
+    <None Include="ThighCmsAdmin\lib\lib\font-awesome\docs\assets\less\twbs-203\navbar.less" />
+    <None Include="ThighCmsAdmin\lib\lib\font-awesome\docs\assets\less\twbs-203\navs.less" />
+    <None Include="ThighCmsAdmin\lib\lib\font-awesome\docs\assets\less\twbs-203\pager.less" />
+    <None Include="ThighCmsAdmin\lib\lib\font-awesome\docs\assets\less\twbs-203\pagination.less" />
+    <None Include="ThighCmsAdmin\lib\lib\font-awesome\docs\assets\less\twbs-203\popovers.less" />
+    <None Include="ThighCmsAdmin\lib\lib\font-awesome\docs\assets\less\twbs-203\progress-bars.less" />
+    <None Include="ThighCmsAdmin\lib\lib\font-awesome\docs\assets\less\twbs-203\reset.less" />
+    <None Include="ThighCmsAdmin\lib\lib\font-awesome\docs\assets\less\twbs-203\responsive-1200px-min.less" />
+    <None Include="ThighCmsAdmin\lib\lib\font-awesome\docs\assets\less\twbs-203\responsive-767px-max.less" />
+    <None Include="ThighCmsAdmin\lib\lib\font-awesome\docs\assets\less\twbs-203\responsive-768px-979px.less" />
+    <None Include="ThighCmsAdmin\lib\lib\font-awesome\docs\assets\less\twbs-203\responsive-navbar.less" />
+    <None Include="ThighCmsAdmin\lib\lib\font-awesome\docs\assets\less\twbs-203\responsive-utilities.less" />
+    <None Include="ThighCmsAdmin\lib\lib\font-awesome\docs\assets\less\twbs-203\responsive.less" />
+    <None Include="ThighCmsAdmin\lib\lib\font-awesome\docs\assets\less\twbs-203\scaffolding.less" />
+    <None Include="ThighCmsAdmin\lib\lib\font-awesome\docs\assets\less\twbs-203\sprites.less" />
+    <None Include="ThighCmsAdmin\lib\lib\font-awesome\docs\assets\less\twbs-203\tables.less" />
+    <None Include="ThighCmsAdmin\lib\lib\font-awesome\docs\assets\less\twbs-203\thumbnails.less" />
+    <None Include="ThighCmsAdmin\lib\lib\font-awesome\docs\assets\less\twbs-203\tooltip.less" />
+    <None Include="ThighCmsAdmin\lib\lib\font-awesome\docs\assets\less\twbs-203\type.less" />
+    <None Include="ThighCmsAdmin\lib\lib\font-awesome\docs\assets\less\twbs-203\utilities.less" />
+    <None Include="ThighCmsAdmin\lib\lib\font-awesome\docs\assets\less\twbs-203\variables.less" />
+    <None Include="ThighCmsAdmin\lib\lib\font-awesome\docs\assets\less\twbs-203\wells.less" />
+    <None Include="ThighCmsAdmin\lib\lib\font-awesome\docs\assets\less\variables.less" />
+    <None Include="ThighCmsAdmin\lib\lib\font-awesome\FontAwesome-Vectors.pdf" />
+    <None Include="ThighCmsAdmin\lib\lib\font-awesome\FontAwesome.ttf" />
+    <None Include="ThighCmsAdmin\lib\lib\font-awesome\font\fontawesome-webfont.eot" />
+    <None Include="ThighCmsAdmin\lib\lib\font-awesome\font\fontawesome-webfont.svg" />
+    <None Include="ThighCmsAdmin\lib\lib\font-awesome\font\fontawesome-webfont.ttf" />
+    <None Include="ThighCmsAdmin\lib\lib\font-awesome\font\fontawesome-webfont.woff" />
+    <None Include="ThighCmsAdmin\lib\lib\font-awesome\less\font-awesome-ie7.less" />
+    <None Include="ThighCmsAdmin\lib\lib\font-awesome\less\font-awesome.less" />
+    <None Include="ThighCmsAdmin\lib\lib\font-awesome\README.md" />
+    <None Include="ThighCmsAdmin\lib\lib\font-awesome\sass\font-awesome.sass" />
+    <None Include="ThighCmsAdmin\lib\lib\font-awesome\sass\font-awesome.scss" />
+    <None Include="ThighCmsAdmin\lib\lib\fullcalendar-1.5.3\demos\json-events.php" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>3448</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>
